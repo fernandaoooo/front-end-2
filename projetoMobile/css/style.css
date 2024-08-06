@@ -4,7 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #73ac8d;
+    background-color: rgb(24, 95, 63)
+}
+.cards:hover{
+    background-color: rgb(93, 179, 141);
+
 }
 .cont{
     flex-wrap: wrap;
@@ -55,7 +59,7 @@ ul {
     font-size: 18px;
 }
 header {
-    background-color: #0c4927;
+    background-color: #0c4b28;
     padding-top: 10px;
 }
 li {
@@ -71,4 +75,24 @@ h2 {
 .ulnav {
     display: flex;
     list-style-type: none;
+}
+#pet {
+    width: 35%;
+}
+footer {
+    background-color: #0c4927;
+    margin: 100px 0 0 0;
+    padding: 80px;
+}
+.foot {
+    margin-top: 30px;
+    padding-bottom: 0px;
+    text-align: center;
+    color: #ffffff;
+}
+.pata {
+    width: 5%;
+    height: auto;
+    text-align: right;
+    position: static;
 }
