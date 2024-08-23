@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 1px;
+    
 }
 
 footer {
     width: 100%;
     background-color: #19234d;
+    letter-spacing: 1px;
 }
