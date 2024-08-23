@@ -82,6 +82,11 @@ header {
     background-color: #3e3366;
     padding-top: 10px;
 }
+.logo {
+    max-height: 40px; 
+    width: auto; /* Mantém a proporção da imagem */
+    height: auto;
+}
 li {
     margin-right: 50px;
     margin-bottom: 40px;
