@@ -40,11 +40,12 @@ img {
     display: block;
     height: auto;
     width: 30%;
-    border: 8px;   
-    border-radius: 50px; 
+    border: 8px;    
     padding: 30px;
-    min-width: 350px;
     max-width: 90%;
+}
+.redondo{
+    border-radius: 50px;
 }
 a {
     text-decoration: none;
@@ -83,9 +84,10 @@ header {
     padding-top: 10px;
 }
 .logo {
-    max-height: 40px; 
-    width: auto; /* Mantém a proporção da imagem */
+    width: 20%; 
     height: auto;
+    margin: 0;
+    padding: 0%;
 }
 li {
     margin-right: 50px;
@@ -103,19 +105,6 @@ h2 {
 }
 #pet {
     width: 35%;
-}
-.foot {
-    margin-top: 30px;
-    padding-bottom: 0px;
-    text-align: center;
-    color: #ffffff;
-}
-.pata {
-    width: 5%;
-    height: auto;
-    text-align: right;
-    position: static;
-    max-width: 5%;
 }
 h3{
     text-align: center;

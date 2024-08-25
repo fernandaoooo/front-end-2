@@ -51,6 +51,9 @@ header .btn-contato button{
 header .btn-contato button:hover{
     box-shadow: 0px 0px 8px #04d40b;
 }
+nav{
+    padding-right: 10%;
+}
 img{
     width: 20%;
 }
