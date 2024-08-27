@@ -49,9 +49,8 @@ img {
 }
 a {
     text-decoration: none;
-    color: rgb(39, 0, 105);
+    color: rgb(255, 255, 255);
     font-size: 18px;
-    font-weight: 600;
     letter-spacing: 1px;
     margin-top: 200px;
     
@@ -80,7 +79,7 @@ ul {
     font-size: 18px;
 }
 header {
-    background-color: #776e90;
+    background-color: #3e3366;
     padding-top: 10px;
 }
 .logo {
@@ -88,6 +87,7 @@ header {
     height: auto;
     margin: 0;
     padding: 0%;
+    right: 0;
 }
 li {
     margin-right: 50px;
