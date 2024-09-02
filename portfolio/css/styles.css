@@ -60,12 +60,12 @@ img{
 }
 .cards{
     border: 2px solid black;
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #296329;
-    min-width: 260px;
+    min-width: 300px;
     border-radius: 15px;
 
 }
@@ -207,7 +207,14 @@ h4{
     padding: 15px;
     
 }
-
+.imgprojetos{
+    width: 70%;
+    padding-bottom: 15px;
+    
+}
+#eu{
+    margin-left: 70%;
+}
 @keyframes underline-animation {
     0% {
         left: -121px;
