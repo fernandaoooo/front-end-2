@@ -118,11 +118,13 @@ input, textarea {
   }
 form {
     margin: 0 auto;
-    width: 500px;
+    width: 350px;
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
     background-color: #296329;
+    min-width: 50px;
+    margin-top: 50px;
   }
 form div + div {
     margin-top: 1em;
@@ -130,7 +132,7 @@ form div + div {
 label {
     display: inline-block;
     width: 90px;
-    text-align: right;
+    text-align: left;
     color:  #ffffff;
   }
 
@@ -214,6 +216,9 @@ h4{
 }
 #eu{
     margin-left: 70%;
+}
+#virtual{
+    padding-top: 10%;
 }
 @keyframes underline-animation {
     0% {
