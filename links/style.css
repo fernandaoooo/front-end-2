@@ -6,10 +6,67 @@ a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a:hover{
-    color: darkgreen;
-    text-decoration: dashed;
+    color: rgb(178, 235, 178);
+    text-decoration: none;
 }
-p{
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+section {
+    background-color: rgba(1, 48, 19, 0.918);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #73a58e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+thead {
+    color: rgb(8, 82, 39);
+    text-align: center;
+}
+
+th, td, tr{
+    padding: 12px; 
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+.fundo{
+    background-color: rgb(154, 194, 174);
+    padding: 18px;
+    text-align: center;
+}
+th {
+    font-size: 1.2rem; 
+    font-weight: 600;
+}
+
+td {
+    font-size: 1rem; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+td a {
+    color: rgb(15, 85, 42);
+    text-decoration: none;
+    font-weight: 500;
+}
+
