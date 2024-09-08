@@ -18,13 +18,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 section {
     background-color: rgba(1, 48, 19, 0.918);
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 }
 
 table {
@@ -35,7 +34,6 @@ table {
     border-collapse: collapse;
     background-color: #73a58e;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 thead {
@@ -68,5 +66,8 @@ td a {
     color: rgb(15, 85, 42);
     text-decoration: none;
     font-weight: 500;
+}
+#centro{
+    justify-content: center;
 }
 

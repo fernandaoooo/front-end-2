@@ -13,6 +13,12 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.flex{
+    display: flex;
+}
+section.topo-do-site{
+    padding: 40px 4%;
+}
 /* ESTILO DO CABEÇALHO */
 header{
     padding: 40px 4%;
@@ -92,6 +98,7 @@ img{
 p{
     text-align: justify;
     color: #ffffff;
+    font-size: 18px;
 }
 h1{
     color: #44a039;
@@ -215,9 +222,7 @@ h4{
     padding-bottom: 15px;
     
 }
-#eu{
-    margin-left: 70%;
-}
+
 #virtual{
     padding-top: 10%;
 }
@@ -234,8 +239,13 @@ h4{
         opacity: 0;
     }
 }
-.txt-topo-site{
-    margin-right: 60%;
-    text-align: justify;
-    padding-top: 10px;
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.topo-do-site .img-topo-site img{
+    width: 80%;
+    min-width: 150px;
+    border-radius: 15px;
 }
