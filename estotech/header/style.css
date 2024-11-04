@@ -1,0 +1,47 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A3324;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19553c;
+    padding: 10px 20px;
+    border-bottom: 2px solid #123a28;
+}
+
+.logo h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #9AD3BC;
+}
+
+/* Material Icons Import */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
