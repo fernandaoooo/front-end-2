@@ -1,0 +1,197 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A3324;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #1B4D3E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar li:hover {
+    background-color: #144d39;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #19553c;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-cadastro {
+    background-color: #123a28;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: 2px solid #1B4D3E;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #9AD3BC;
+}
+
+/* Alinhamento horizontal de labels e inputs */
+.label-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.label-group label {
+    color: white;
+    font-size: 14px;
+    width: 120px;
+}
+
+.label-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #1B4D3E;
+    border-radius: 4px;
+    background-color: #0E2D24;
+    color: #9AD3BC;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    color: #9AD3BC;
+}
+
+.sexo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sexo label {
+    margin: 0;
+}
+
+.btn-adicionar {
+    width: 100%;
+    padding: 12px;
+    border: 2px dashed #1B4D3E;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #0A3324;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.btn-adicionar:hover, .btn-cadastrar:hover {
+    background-color: #0a1f15;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .form-cadastro {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    /* Empilhamento de labels e inputs em telas menores */
+    .label-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .label-group label {
+        margin-bottom: 5px;
+    }
+}
+
