@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export default function Home() {
   const nome = "Fernanda"
@@ -8,6 +9,12 @@ export default function Home() {
       <h1>Página principal</h1>
       <p>Parágrafo da página principal</p>
       <p>Autora: {nome}</p>
+      <Image 
+      className={styles.imagem}
+      src="/images/ti.jpg" 
+      alt="Stitch" 
+      width={300} 
+      height={200}/>
     </div>
   );
 }

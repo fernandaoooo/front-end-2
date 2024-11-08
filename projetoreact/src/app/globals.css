@@ -35,6 +35,11 @@ a {
   text-decoration: none;
 }
 
+h1{
+  color: rgb(48, 105, 65);
+  font-weight: bold;
+  text-align: center;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
