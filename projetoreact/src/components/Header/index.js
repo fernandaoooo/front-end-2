@@ -6,9 +6,9 @@ export default function Header() {
         <header>
             <nav>
                 <ul>
-                    <li><link href="/home">Home</link></li>
-                    <li><link href="/sobre">Sobre</link></li>
-                    <li><link href="/contato">Contato</link></li>
+                    <li><Link href="/home">Home</Link></li>
+                    <li><Link href="/sobre">Sobre</Link></li>
+                    <li><Link href="/contato">Contato</Link></li>
                 </ul>
             </nav>
         </header>
