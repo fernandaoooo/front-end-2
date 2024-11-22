@@ -1,3 +1,7 @@
-.paragrafo{
-    color: blueviolet;
+.paragrafo {
+    background-color: green;
+}
+
+#paragrafoUnico {
+    background-color: red;
 }
