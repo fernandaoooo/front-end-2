@@ -1,111 +1,47 @@
-.header{
-    background-color: rgb(3, 115, 184);
-    top: 0;
+.header {
     display: flex;
-    height: 35px;
+    justify-content: space-between;
     align-items: center;
-}
-
-.nav{
-    margin-left: 10%;
-    top:0;
-}
-
-.gidle{
-    text-align: center;
+    background-color: #1d5a31; /* Cor de fundo amarela, como um girassol */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordas arredondadas */
+  }
+  
+  .botao {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .girassol {
+    width: 100%;
+    height: auto;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navItem {
+    margin: 0;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
     font-weight: bold;
-    color: white;
-    margin-left: 50%;
-    font-family: 'Sour Gummy';
-}
-
-.lista{
-    display: flex;
-    gap: 8%;
-    justify-content: center;
-    list-style-type: none;
-    align-items: center;
-    font-family: 'Baskervville SC';
-    color: white;
-    font-size: 2.8vh;
-}
-
- .menu, .listas {
-    display: none;
-}
-
-.li:hover {
-    color:  rgb(80, 170, 226);
-    transform: scale(0.9);
-}
-
-.divs{
-    display: none;
-}
-
-@media(max-width:600px){
-
-    .header{
-        width: 100%;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-
-    }
-    
-    .lista{
-        display: none;
-    }
-
-    .menu{
-        width: 20px;
-        height: 1.5px;
-        background-color: #fff;
-        margin: 2px;
-        display: block;
-    }
-
-    .gidle{
-        margin-left: 1%;
-    }
-
-    .divs{
-        position: absolute;
-        width: 20vh;
-        left: 0;
-        top: 30px;
-        height: 100px;
-        align-items: center;
-        justify-content: space-around;
-        background-color:  var(--corprincipal);   
-        text-align: center;
-        display: block;
-    }
-
-    .lii{
-        color: white;
-    }
-
-    .listas{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        gap:10px;
-        list-style: none;
-    }
-
-    .lii:hover {
-        color:  rgb(80, 170, 226);
-        transform: scale(0.9);
-    }
-
-    .menu{
-        cursor: pointer;
-    }
-
-    .nav{
-        margin-left: 5%;
-        top:0;
-    }
-}
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    background-color: #8cb493; /* Cor de fundo ao passar o mouse */
+  }
+  

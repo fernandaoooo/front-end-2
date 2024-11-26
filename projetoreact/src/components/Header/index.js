@@ -1,40 +1,44 @@
-'use client'
-import {useState} from "react"
-import Link from "next/link";
-import styles from "./header.module.css";
-import Image from "next/image";
+"use client"
+import Link from "next/link"
+import style from "./header.module.css"
+import { useState } from "react";
+import Image from "next/image"
 
+export default function Header() {
+    const [showMenu, setShowMenu] = useState(true)
+    const [buttonText, setButtonText] = useState("aparecendo")
 
-const Header = () =>{
-    const [mostrarheader, setmostrarheader] = useState(false) 
-    return(
-        <header className={styles.header}>
-            <nav className={styles.nav}>
-               
-                <div className={styles.menuu} onClick={() => setmostrarheader(!mostrarheader)}>
-                    <div className={styles.menu}></div>
-                    <div className={styles.menu}></div>
-                    <div className={styles.menu}></div>
-                {mostrarheader && (
-                        <div className={styles.divs}>
-                            <ul className={styles.listas}>
-                                <li className={styles.lii}><Link href='/'>Home</Link></li>
-                                <li className={styles.lii}><Link href='/sobre'>Carreira</Link></li>
-                                <li className={styles.lii}><Link href='/albuns'>Álbuns</Link></li>
-                            </ul>
-                        </div>
-                )
-                }
-                    <ul className={styles.lista}>
-                        <li className={styles.li}><Link href='/'>Home</Link></li>
-                        <li className={styles.li}><Link href='/sobre'>Carreira</Link></li>
-                        <li className={styles.li}><Link href='/albuns'>Álbuns</Link></li>
+    const handleClick = () => {
+        setShowMenu(!showMenu)
+        setButtonText(showMenu ? "desaparecendo" : "aparecendo")
+    }
+
+    return (
+        <header className={style.header}>
+            <button className={style.botao} onClick={handleClick}>
+                <Image
+                    src="/images/barbie.png"
+                    alt="Girassol" className={style.girassol}
+                    width={60} 
+                    height={60}
+                />
+            </button>
+            {
+                showMenu &&
+                <nav>
+                    <ul className={style.navList}>
+                        <li className={style.navItem}>
+                            <Link href="/state" className={style.navLink}>Início</Link>
+                        </li>
+                        <li className={style.navItem}>
+                            <Link href="/sobre" className={style.navLink}>Sobre</Link>
+                        </li>
+                        <li className={style.navItem}>
+                            <Link href="/contato" className={style.navLink}>Contato</Link>
+                        </li>
                     </ul>
-                </div>
-            </nav>
-            <p className={styles.gidle}>(G)- IDLE</p>
+                </nav>
+            }
         </header>
     )
 }
-
-export default Header;
