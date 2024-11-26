@@ -17,8 +17,8 @@ export default function Header() {
         <header className={style.header}>
             <button className={style.botao} onClick={handleClick}>
                 <Image
-                    src="/images/barbie.png"
-                    alt="Girassol" className={style.girassol}
+                    src="/images/cachorro.png"
+                    alt="Cachorro feio" className={style.cachorro}
                     width={60} 
                     height={60}
                 />
@@ -42,3 +42,4 @@ export default function Header() {
         </header>
     )
 }
+

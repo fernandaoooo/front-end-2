@@ -6,7 +6,7 @@ export default function Home() {
   const nome = "Fernanda"
   return (
     <div>
-      <h1>Página principal</h1>
+      <h1>Início</h1>
       <p>Parágrafo da página principal</p>
       <p>Autora: {nome}</p>
       <Image 
