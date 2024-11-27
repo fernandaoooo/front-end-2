@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <h1>Início</h1>
-      <p>Parágrafo da página principal</p>
+      <p>Trabalho Front-End</p>
       <p>Autora: {nome}</p>
       <Image 
       className={styles.imagem}
