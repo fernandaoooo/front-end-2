@@ -11,7 +11,7 @@ export default function Home() {
       <p>Autora: {nome}</p>
       <Image 
       className={styles.imagem}
-      src="/images/stitch.png" 
+      src="/images/LiloeStitch.jpeg" 
       alt="Stitch" 
       width={300} 
       height={200}/>

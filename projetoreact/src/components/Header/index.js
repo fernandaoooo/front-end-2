@@ -15,8 +15,8 @@ export default function Header() {
         <header className={style.header}>
             <button onClick={toggleMenu} className={style.menuToggle}>
                 <Image
-                    src="/images/stitch.png"
-                    alt="Cachorro feio" className={style.cachorro}
+                    src="/images/Stitch.png"
+                    alt="Stitch" className={style.cachorro}
                     width={60} 
                     height={60}
                 />
