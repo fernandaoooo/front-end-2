@@ -21,7 +21,6 @@ export default function Header() {
                     height={60}
                 />
             </button>
-<<<<<<< HEAD
             {
                 showMenu &&
                 <nav>
@@ -41,21 +40,6 @@ export default function Header() {
                     </ul>
                 </nav>
             }
-=======
-            <nav className={`${style.nav} ${showMenu ? style.open : ""}`}>
-                <ul className={style.navList}>
-                    <li className={style.navItem}>
-                        <Link href="/" className={style.navLink}>Início</Link>
-                    </li>
-                    <li className={style.navItem}>
-                        <Link href="/sobre" className={style.navLink}>Sobre</Link>
-                    </li>
-                    <li className={style.navItem}>
-                        <Link href="/contato" className={style.navLink}>Contato</Link>
-                    </li>
-                </ul>
-            </nav>
->>>>>>> 110d46f3a3c7dfb9b8f2ed1d7ee580f3df8c4e01
         </header>
     )
 }
