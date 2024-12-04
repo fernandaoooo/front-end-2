@@ -36,6 +36,9 @@ export default function Header() {
                         <li className={style.navItem}>
                             <Link href="/contato" className={style.navLink}>Contato</Link>
                         </li>
+                        <li className={style.navItem}>
+                            <Link href="/listas" className={style.navLink}>Listas</Link>
+                        </li>
                     </ul>
                 </nav>
             }
