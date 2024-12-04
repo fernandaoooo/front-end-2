@@ -6,12 +6,12 @@ export default function Home() {
   const nome = "Fernanda"
   return (
     <div>
-      <h1>Página principal</h1>
-      <p>Parágrafo da página principal</p>
+      <h1>Início</h1>
+      <p>Trabalho Front-End</p>
       <p>Autora: {nome}</p>
       <Image 
       className={styles.imagem}
-      src="/images/ti.jpg" 
+      src="/images/LiloeStitch.jpeg" 
       alt="Stitch" 
       width={300} 
       height={200}/>
