@@ -35,6 +35,9 @@ export default function Header() {
                     <li className={style.navItem}>
                         <Link href="/listas" className={style.navLink}>Listas</Link>
                     </li>
+                    <li className={style.navItem}>
+                        <Link href="/props" className={style.navLink}>Props</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
