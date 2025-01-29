@@ -9,7 +9,9 @@ export default function Efeitos(){
     // },[cont])
 
     const [ufs, setUfs] = useState([]);
-    const [usSelected, setufSelected] = useState('');
+    const [ufSelected, setufSelected] = useState('');
+    const [cities, setCities] = useState([]);
+    const [citySelected, setCitySelected] = useState('');
 
 const getUfs = async () => {
         try {
@@ -23,32 +25,58 @@ const getUfs = async () => {
         } catch (error) {
             console.log('Ocorreu algum erro: '+ error)
         }
-
+}
+const getCities = async () => {
+    try {
+      const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufSelected}/municipios?orderBy=nome`);
+      if(!response.ok){
+        throw new Error('Erro ao buscar dados: '+ response.statusText);
+      }  
+      const data = await response.json();
+      setCities(data);
+      console.log(data);
+    } catch (error) {
+        console.log('Ocorreu algum erro: '+ error)
+    }
 }
 
 useEffect(() => {
     getUfs();
 },[])
 
+useEffect(() => {
+    getCities();
+},[ufSelected])
+
     return (
         <div>
+            <h1>Efeitos colaterais</h1>
             {
-               <select onChange={(ev) => setufSelected(ev.target.value)}>
+               <select onChange={(ev) => {setufSelected(ev.target.value), setCitySelected('')}}>
                     <option value="">Selecione o estado</option>
                     {ufs.map((uf) => (
                         <option 
                             value={uf.id} 
                             key={uf.id}>
-                            {uf.nome}
+                            {`${uf.nome} - ${uf.sigla}`}
                         </option>
                     ))}
                </select>
             }
-            <h1>Efeitos colaterais</h1>
-            {/* <button onClick={() => (setCont(cont + 1))}>Adicionar</button>
-            <p>Renderizações cont 1: {cont}</p>
-            <button onClick={() => (setCont2(cont2 + 1))}>Adicionar</button>
-            <p>Renderizações cont 2: {cont2}</p> */}
+            {
+                <select onChange={(ev) => setCitySelected(ev.target.value)}>
+                    <option value="">Selecione a cidade</option>
+                    {cities.map((city) => (
+                        <option 
+                            value={city.id} 
+                            key={city.id}>
+                            {`${city.nome}`}
+                        </option>
+                    ))}
+                </select>
+            }
+            
+            {citySelected?<p>{citySelected}</p>:<p>Aguardando!</p>}
         </div>
     )
 }
