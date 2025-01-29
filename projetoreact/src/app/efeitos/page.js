@@ -50,7 +50,7 @@ useEffect(() => {
 
     return (
         <div>
-            <h1>Efeitos colaterais</h1>
+            <h1>Efeitos colateraiss</h1>
             {
                <select onChange={(ev) => {setufSelected(ev.target.value), setCitySelected('')}}>
                     <option value="">Selecione o estado</option>
