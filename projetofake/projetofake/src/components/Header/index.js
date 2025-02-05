@@ -27,13 +27,13 @@ export default function Header() {
                         <Link href="/" className={style.navLink}>Início</Link>
                     </li>
                     <li className={style.navItem}>
-                        <Link href="/medico" className={style.navLink}>Médico</Link>
+                        <Link href="/medicos" className={style.navLink}>Médicos</Link>
                     </li>
                     <li className={style.navItem}>
-                        <Link href="/paciente" className={style.navLink}>Paciente</Link>
+                        <Link href="/pacientes" className={style.navLink}>Pacientes</Link>
                     </li>
                     <li className={style.navItem}>
-                        <Link href="/consulta" className={style.navLink}>Consulta</Link>
+                        <Link href="/consultas" className={style.navLink}>Consultas</Link>
                     </li>
                 </ul>
             </nav>
