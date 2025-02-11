@@ -46,7 +46,7 @@
 .navItem:hover > .subMenu{
   display: flex;
   flex-direction: column;
-  background-color: #083006;
+  background-color: #4e0101;
 }
 
 .subMenu{
@@ -59,13 +59,13 @@
 
 .subMenu > li{
   padding: 2% 0;
-  border: 1px solid rgb(13, 48, 27);
+  border: 1px solid rgb(109, 7, 3);
   margin: 0;
   top: 0;
 }
 
 .subMenu > li:hover{
-  background-color: #3b6043;
+  background-color: #792e0b;
 }
 
 @media screen and (max-width: 570px) {
