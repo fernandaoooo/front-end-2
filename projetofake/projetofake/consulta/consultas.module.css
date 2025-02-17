@@ -1,0 +1,163 @@
+.containerTablea {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.campoTabela{
+    overflow-x: auto;
+    width: 100%;
+}
+
+.tituloTabela{
+    font-size: 26px;
+    margin: 16px;
+}
+
+.tabelaConsulta {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.topoTablea {
+    background-color: #167c55;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+}
+
+.topoTablea th {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.corpoTabela tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.corpoTabela tr:hover {
+    background-color: #f1f1f1;
+}
+
+.linhaCorpo td {
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.containerButton{
+    display: flex;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.containerButton button{
+    background-color: #167c55;
+    color: #f1f1f1;
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.containerButton button:hover{
+    background-color: #149765;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: flex;
+    top:0;
+    left: 0;
+}
+
+.campoLista{
+    background-color: #f2e3d5;
+    width: 40%;
+    height: 400px;
+    margin: auto;
+    overflow: auto;
+    border-radius: 20px 0 0 20px;
+}
+
+.campoLista *{
+    list-style-type: none;
+    width: 100%;
+}
+
+.campoLista li{
+    padding-left: 2%;
+    transition: all 0.2s;
+    cursor:default;
+}
+
+.campoLista li:hover{
+    background-color: #14976549;
+    padding: 2%;
+}
+
+.botaoClose{
+    background-color: rgb(207, 29, 29);
+    height: 40px;
+    width: 70px;
+    border-radius: 0 0 10px 0;
+    border: solid 1px rgba(0, 0, 0, 0.404);
+    color: rgb(223, 211, 211);
+    transition: all 0.2s;
+}
+
+.botaoClose:hover{
+    color: white;
+    background-color: red;
+}
+
+.containerInput{
+    width: 100%;
+    display: flex;
+    background-color: #149765;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-bottom: 20px;
+}
+
+.containerInput input{
+    margin: 20px auto;
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.404);
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .containerTablea {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tabelaMedicos {
+        font-size: 14px;
+    }
+
+    .topoTablea th, .linhaCorpo td {
+        padding: 10px;
+    }
+
+    .campoLista{
+        width: 90%;
+    }
+}
