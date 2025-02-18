@@ -22,7 +22,7 @@ export default function Medico() {
             }
     
             const dados = await resposta.json();
-            console.log("Dados recebidos:", dados);  // Log para ver se os dados estão chegando
+            console.log("Dados recebidos:", dados);
             setMedicos(dados);
     
         } catch (error) {
