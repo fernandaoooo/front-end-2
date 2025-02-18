@@ -58,7 +58,7 @@ export default function Medico() {
                 <div className={styles.modal}>
                     <div className={styles.campoLista}>
                         <div className={styles.containerInput}>
-                            <button className={styles.botaoClose} onClick={() => setMostrarInput(false)}>Fechar</button>
+                            <button className={styles.botaoClose} onClick={() => setMostrarInput(false)}>X</button>
                             <input 
                                 type="text" 
                                 placeholder="Nome do médico aqui" 

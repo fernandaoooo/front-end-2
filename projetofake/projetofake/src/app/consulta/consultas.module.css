@@ -1,4 +1,4 @@
-.containerTablea {
+.containerTabela {
     width: 90%;
     margin: 50px auto;
     display: flex;
@@ -63,10 +63,11 @@
 
 .containerButton button{
     background-color: #7c1616;
+    font-size: 16px;
     color: #f1f1f1;
     padding: 10px 15px; 
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -91,7 +92,6 @@
     height: 400px;
     margin: auto;
     overflow: auto;
-    border-radius: 20px 0 0 20px;
 }
 
 .campoLista *{
@@ -111,12 +111,12 @@
 
 .botaoClose{
     background-color: rgb(207, 29, 29);
-    height: 40px;
-    width: 70px;
-    border-radius: 0 0 10px 0;
+    height: 35px;
+    width: 50px;
     border: solid 1px rgba(0, 0, 0, 0.404);
     color: rgb(223, 211, 211);
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .botaoClose:hover{

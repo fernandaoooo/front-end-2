@@ -62,7 +62,7 @@ export default function Consulta() {
     }, []);
 
     return (
-        <div className={styles.containerTablea}>
+        <div className={styles.containerTabela}>
             <h3 className={styles.tituloTabela}>Consultas</h3>
             <div className={styles.containerButton}>
                 <button onClick={() => setMostrarInputPaciente(!mostrarInputPaciente)}>Pesquisar pacientes</button>
@@ -74,7 +74,7 @@ export default function Consulta() {
                 <div className={styles.modal}>
                     <div className={styles.campoLista}>
                         <div className={styles.containerInput}>
-                            <button className={styles.botaoClose} onClick={() => setMostrarInputMedico(false)}>Fechar</button>
+                            <button className={styles.botaoClose} onClick={() => setMostrarInputMedico(false)}>X</button>
                             <input
                                 type="text"
                                 placeholder="Nome do médico"
@@ -99,7 +99,7 @@ export default function Consulta() {
                 <div className={styles.modal}>
                     <div className={styles.campoLista}>
                         <div className={styles.containerInput}>
-                            <button className={styles.botaoClose} onClick={() => setMostrarInputPaciente(false)}>Fechar</button>
+                            <button className={styles.botaoClose} onClick={() => setMostrarInputPaciente(false)}>X</button>
                             <input
                                 type="text"
                                 placeholder="Nome do paciente"

@@ -55,7 +55,7 @@ export default function Paciente() {
                     <div className={styles.modal}>
                         <div className={styles.campoLista}>
                             <div className={styles.containerInput}>
-                                <button className={styles.botaoClose} onClick={() => setMotarInput(!mostrarInput)}>Fechar</button>
+                                <button className={styles.botaoClose} onClick={() => setMotarInput(!mostrarInput)}>X</button>
                                 <input type="text" placeholder="Nome do paciente" onChange={(e) => pesquisarPacientes(e.target.value)} />
                             </div>
                             <div className={styles.containerlista}>
@@ -73,7 +73,7 @@ export default function Paciente() {
             }
             <div className={styles.campoTabela}>
                 <table className={styles.tabelaPacientes}>
-                    <thead className={styles.topoTablea}>
+                    <thead className={styles.topoTabela}>
                         <tr key="cabecalho" className={styles.linhaSuperior}>
                             <th>ID</th>
                             <th>Nome</th>
