@@ -1,5 +1,5 @@
 "use client"
-import styles from "./medico.module.css";
+import styles from "./medicos.module.css";
 import React, { useState, useEffect } from "react";
 
 export default function Medico() {

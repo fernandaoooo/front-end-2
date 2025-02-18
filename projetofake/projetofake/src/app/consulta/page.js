@@ -77,7 +77,7 @@ export default function Consulta() {
                             <button className={styles.botaoClose} onClick={() => setMostrarInputMedico(false)}>Fechar</button>
                             <input
                                 type="text"
-                                placeholder="Escreva o nome do médico aqui"
+                                placeholder="Nome do médico"
                                 value={medicoPesquisado}
                                 onChange={(e) => {
                                     setMedicoPesquisado(e.target.value);
@@ -102,7 +102,7 @@ export default function Consulta() {
                             <button className={styles.botaoClose} onClick={() => setMostrarInputPaciente(false)}>Fechar</button>
                             <input
                                 type="text"
-                                placeholder="Escreva o nome do paciente aqui"
+                                placeholder="Nome do paciente"
                                 value={pacientePesquisado}
                                 onChange={(e) => {
                                     setPacientePesquisado(e.target.value);

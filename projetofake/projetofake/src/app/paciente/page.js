@@ -56,7 +56,7 @@ export default function Paciente() {
                         <div className={styles.campoLista}>
                             <div className={styles.containerInput}>
                                 <button className={styles.botaoClose} onClick={() => setMotarInput(!mostrarInput)}>Fechar</button>
-                                <input type="text" placeholder="Escreva o nome do médico aqui" onChange={(e) => pesquisarPacientes(e.target.value)} />
+                                <input type="text" placeholder="Nome do paciente" onChange={(e) => pesquisarPacientes(e.target.value)} />
                             </div>
                             <div className={styles.containerlista}>
                                 <ul>
